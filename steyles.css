@@ -4,13 +4,15 @@ body {
   color: black;
 }
 .navbar-brand{
+    width: 30%;
     background-color:#1a5f7a;
     color: aliceblue;
-    width: 10%;
+    width: fit-content;
     height: 5%;
     border-radius:5px;
     text-align: center;
 }
+
 .navbar-brand:hover{
     background-color:#2a728f;
     color:#fff;

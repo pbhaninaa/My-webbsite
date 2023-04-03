@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/d4bd3dfc55.js" crossorigin="anonymous"></script>
     <script
       src="https://kit.fontawesome.com/d4bd3dfc55.js"
       crossorigin="anonymous"
@@ -75,13 +76,12 @@
       text-transform: none !important;
       color: yellow !important;
     }
-    #pic{
+    #pic {
       border: 2px solid black;
       border-radius: 7px;
     }
     img {
       border: none !important;
-      height: 30%;
       width: 100%;
     }
     .btn:hover {
@@ -89,6 +89,7 @@
       color: white;
       border: none;
     }
+    
     .swing {
       animation: swing ease-in-out 1s infinite alternate;
       transform-origin: center -20px;
@@ -141,41 +142,38 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Home</a>
-
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-light pt-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style="color:aliceblue; "
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="profile.html">Profile</a>
-            <a class="nav-link" href="#">Certificates</a>
-            <a class="nav-link" href="#">CV</a>
+            <a class="nav-link" href="certificates.html">Certificates</a>
+            <a class="nav-link" href="cv.html">CV</a>
           </div>
         </div>
       </div>
     </nav>
     <div class="container">
-      <div class="row mt-5">
-        <div class="col-8 mt-5">
+      <div class="row mt-3">
+        <div class="col-8 mt-3">
           <figure class="swing">
-            <img id='pic'src="./images/phila.jpg" />
+            <img id="pic" src="./images/phila.jpg" />
           </figure>
           <!-- <img src="" alt="My Picture to be shown here" /> -->
         </div>
         <div class="col-4 mt-5">
-          <h3 class="mt-5">Philasande Bhani</h3>
+          <h3 class="mt-5">Java Full-Stack Developer</h3>
           <p>
-            I am Philasande Bhani a young graduate of
-            <span id="age"></span> years.
+            I am Philasande Bhani a young graduate <span ></span>
           </p>
           <p>
             I have a National Diploma in Information Technology and a
@@ -186,18 +184,19 @@
             software programs and to make improvements that will enhance
             functionality.
           </p>
-           <input
-          type="button"
-          class="btn btn-dark mt-3 mb-5 ms-5"
-          value="Contact me."
-          onclick="contact()"
-        />
+          <input
+            type="button"
+            class="btn btn-dark mt-3 mb-5 ms-5"
+            value="Contact me."
+            onclick="contact()"
+            onclick="locateMe()"
+          />
         </div>
       </div>
     </div>
     <script src="script.js"></script>
   </body>
-  <footer class="bg-dark text-center text-white mt-4">
+  <footer class="bg-dark text-center text-white mt-1">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->

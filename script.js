@@ -42,4 +42,8 @@ function backHome() {
 }
 function contact() {
   window.location.href = "contact.html";
+  alert("Contact not yet published",navigator.geolocation.getCurrentPosition(showPosition,showError));
+}
+function locateMe(){
+ alertgetCurrentPosition()
 }
