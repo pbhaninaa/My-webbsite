@@ -10,7 +10,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/d4bd3dfc55.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d4bd3dfc55.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -19,13 +22,13 @@
     <link rel="stylesheet" href="steyles.css" />
     <title>Document</title>
   </head>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .navbar-brand {
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar-brand {
       background-color: #1a5f7a;
       color: aliceblue;
       width: 10%;
@@ -54,50 +57,55 @@
       color: black;
       background-color: white;
     }
-      html {
-        background-color: #fff;
-        color: #555;
-        font-family: "Lato", "Arial", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        text-rendering: optimizeLegibility;
-      }
+    html {
+      background-color: #fff;
+      color: #555;
+      font-family: "Lato", "Arial", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      text-rendering: optimizeLegibility;
+    }
 
-      .meals-showcase {
-        list-style: none;
-        width: 100%;
-      }
+    .meals-showcase {
+      list-style: none;
+      width: 100%;
+    }
 
-      .meals-showcase li {
-        display: block;
-        float: left;
-        width: 25%;
-      }
+    .meals-showcase li {
+      display: block;
+      float: left;
+      width: 25%;
+    }
 
-      .meal-photo {
-        width: 100%;
-        margin: 0;
-        overflow: hidden;
-        background-color: #000;
-      }
+    .meal-photo {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
 
-      .meal-photo img {
-        opacity: 0.7;
-        width: 100%;
-        height: auto;
-        transform: scale(1.15);
-        transition: transform 0.5s, opacity 0.5s;
-      }
+    .meal-photo img {
+      opacity: 0.7;
+      width: 100%;
+      height: auto;
+      transform: scale(1.15);
+      transition: transform 0.5s, opacity 0.5s;
+    }
 
-      .meal-photo img:hover {
-        opacity: 1;
-        transform: scale(1.03);
+    .meal-photo img:hover {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+    .container ul li iframe {
+      margin: 3px 3px 3px 5px;
+    }
+    @media only screen and (max-width: 600px) {
+      iframe{
+        height: 10%;
+        width: 20%;
       }
-      .container ul li iframe{
-        margin: 3px 3px 3px 5px;
-      }
-    </style>
-  
+    }
+  </style>
 
   <body>
     <nav
@@ -127,73 +135,50 @@
       </div>
     </nav>
     <div class="container">
-      
       <ul class="meals-showcase">
-        <li class=" ms-5">
-         
-            <iframe
-              src="./certificate/java se 8.pdf"
-              width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe src="./certificate/java se 8.pdf" width="100%" height="500px">
+          </iframe>
         </li>
-        <li class=" ms-5">
-         
-            <iframe
-              src="./certificate/AngularTs.pdf"
-              width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe src="./certificate/AngularTs.pdf" width="100%" height="500px">
+          </iframe>
         </li>
-        <li class=" ms-5">
-         
-            <iframe
-              src="./certificate/Database NoSQL.pdf"
-              width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe
+            src="./certificate/Database NoSQL.pdf"
+            width="100%"
+            height="500px"
+          >
+          </iframe>
         </li>
-        <li class=" ms-5">
-         
-            <iframe
-             src="./certificate/Docker.pdf"
-             width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe src="./certificate/Docker.pdf" width="100%" height="500px">
+          </iframe>
         </li>
       </ul>
       <ul class="meals-showcase">
-        <li class=" ms-5">
-         
-            <iframe
-              src="./certificate/DevOps Foundation.pdf"
-              width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe
+            src="./certificate/DevOps Foundation.pdf"
+            width="100%"
+            height="500px"
+          >
+          </iframe>
         </li>
-        <li class=" ms-5">
-         
-            <iframe
-              src="./certificate/Html.pdf"
-              width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe src="./certificate/Html.pdf" width="100%" height="500px">
+          </iframe>
         </li>
-        <li class=" ms-5">
-         
-            <iframe
-              src="./certificate/Java EE 7.pdf"
-              width="100%" height="500px">
-            </iframe>
-          
+        <li class="ms-5">
+          <iframe src="./certificate/Java EE 7.pdf" width="100%" height="500px">
+          </iframe>
         </li>
-        <li class=" ms-5">
+        <li class="ms-5">
           <iframe src="./certificate/SQL.pdf" width="100%" height="500px">
           </iframe>
         </li>
       </ul>
-  
     </div>
-    
   </body>
 </html>
