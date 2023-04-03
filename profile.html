@@ -20,6 +20,35 @@
     <title>Document</title>
   </head>
   <body>
+    <nav class="navbar  bg-dark navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a style="color:aliceblue" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Go-To
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#aboutme">Who am I</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#locateme">Location, Authorisation and Desired Jobs</a></li>
+                <li><a class="dropdown-item" href="#myexperience">Work Experience and Education</a></li>
+                <li><a class="dropdown-item" href="#myskills">Skils and Desired Roles</a></li>
+                <li><a class="dropdown-item" href="#myprojects">Projects</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    
     <div class="container mt-3 mb-3">
       <!-- ======= -->
 
@@ -51,7 +80,7 @@
         </div>
       </div>
       <!-- ======== -->
-    <div class="card text-dark bg-light mb-3">
+    <div class="card text-dark bg-light mb-3" id="aboutme">
         <div class="card-header"> <i class="fa fa-user"></i>   About Me</div>
         <div class="card-body col-10">
           
@@ -79,7 +108,7 @@
         </div>
       </div> 
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="locateme">
         <div class="card-header" id="card-header"><i class="fa fa-globe"></i> Location and remote preferences</div>
         <div class="card-body">
           <h6 class="card-text" id="remote">Remote</h6>
@@ -98,7 +127,7 @@
         </div>
       </div>
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myauthorisation">
         <div class="card-header"><i class="fa person-digging"></i> Work Authorisation</div>
 
         <div class="card-body">
@@ -110,7 +139,7 @@
       </div>
      
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myjob">
         <div class="card-header"> <i class="fa fa-briefcase"></i>  Ideal next job</div>
         <div class="card-body">
           <h6 class="card-title">As a Junior Software Developer</h6>
@@ -120,7 +149,7 @@
       
       <!-- === Work History === -->
     
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myexperience">
         <div class="card-header"> <i class="fa fa-solid fa-briefcase"></i>  Work History</div>
         <div class="card-body"> 
             <h6 class="card-title" >Reverside Junior Java Full-Stack Developer <i class="fa fa-briefcase"></i></h6>
@@ -152,7 +181,7 @@
         </div>
       </div>
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myeducation">
         <div class="card-header"><i class="fa fa-book"></i> Education</div>
         <div class="card-body">
            <h6 class="card-title" id="education"></h6>
@@ -162,7 +191,7 @@
         </div>
       </div>
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myskills">
         <div class="card-header"><i class="fa fa-person-digging"></i> Skills</div>
         <div class="card-body">
             <h6 class="card-title">Tools and Technologies</h6>
@@ -199,13 +228,13 @@
             <h6 class="card-title"> Databases </h6>
             <p class="card-text">
             MongoDB,
-            SQL WorkBeanch,
+            SQL Workbench,
             Microsoft Access.
             </p>
         </div>
       </div>
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myroles">
         <div class="card-header"> <i class="fa fa-briefcase"></i>  Desired Roles</div>
         <div class="card-body col-6" >
             <ul>
@@ -228,7 +257,7 @@
         </div>
       </div>
       <!-- ======== -->
-      <div class="card text-dark bg-light mb-3">
+      <div class="card text-dark bg-light mb-3" id="myprojects">
         <div class="card-header"><i class="fa fa-r-project"></i>  Projects</div>
         <div class="card-body">
       

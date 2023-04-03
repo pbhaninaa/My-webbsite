@@ -24,8 +24,7 @@ document.getElementById("education").innerHTML =
   "National Diploma (NDip) in Information Technology";
 document.getElementById("education-description1").innerHTML =
   "Ntabezulu Senior Secondary School, January 2013 – November 2015";
-document.getElementById("education1").innerHTML =
-  "Matric";
+document.getElementById("education1").innerHTML = "Matric";
 
 document.getElementById("remote-item").innerHTML =
   "Based in anywhere in the globe";
@@ -35,6 +34,12 @@ document.getElementById("local-item").innerHTML =
 document.getElementById("hybrid").innerHTML = "Hybrid";
 document.getElementById("hybrid-item").innerHTML =
   "Based in any province in South Africa";
-function project(){
+function project() {
   alert("Project not yet published");
+}
+function backHome() {
+  window.location.href = "home.html";
+}
+function contact() {
+  window.location.href = "contact.html";
 }

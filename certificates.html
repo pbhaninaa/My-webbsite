@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="section-meals">
+    <ul class="meals-showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1590091626142-167ee3798ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1588419411826-cab44f3cdcc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1586147210169-4f248d3a4696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+    </ul>
+    <ul class="meals-showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1592177538809-f713fd7d82c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1591452810654-7e035c52c8af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://images.unsplash.com/photo-1589119908995-c6837fa14848?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </figure>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
