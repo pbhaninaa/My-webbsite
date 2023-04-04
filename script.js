@@ -1,5 +1,4 @@
 document.getElementById("card-title").innerHTML = "Philasande Bhani";
-
 const d = new Date();
 let year = d.getFullYear();
 let age = year - 1998;
@@ -47,3 +46,5 @@ function contact() {
 function locateMe(){
  alertgetCurrentPosition()
 }
+
+
