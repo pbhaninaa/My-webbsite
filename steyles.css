@@ -285,7 +285,7 @@ h4 {
 	}
   .row{
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     padding: auto;
     margin: auto;
   }
@@ -313,7 +313,7 @@ h4 {
 	}
   .row{
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     padding: auto;
     margin: auto;
   }
