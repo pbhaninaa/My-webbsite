@@ -277,7 +277,11 @@ h4 {
 		transform: rotate(-3deg);
 	}
 }
-
+#profileHeader:hover {
+	
+	background-color: #D2DAFF; 
+	
+  }
 @media only screen and (max-width: 600px) {
 	iframe {
 		height: 150%;
