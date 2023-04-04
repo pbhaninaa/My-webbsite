@@ -278,4 +278,8 @@ h4 {
 		height: 150%;
 		width: 150%;
 	}
+  .row{
+    flex-direction: column;
+    text-align: center;
+  }
 }
