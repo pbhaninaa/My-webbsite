@@ -73,7 +73,7 @@ document.getElementById("hybrid").innerHTML = "Hybrid";
 document.getElementById("hybrid-item").innerHTML =
   "Based in any province in South Africa";
 function project() {
-  alert("Project not yet published");
+  alert("Soon to be published");
 }
 function backHome() {
   window.location.href = "home.html";
