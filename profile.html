@@ -1,411 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/d4bd3dfc55.js" crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="steyles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar  bg-dark navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand"  href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a style="color:aliceblue" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Go-To
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#aboutme">Who am I</a></li>
-                <li><a class="dropdown-item" href="#locateme">Location, Authorisation and Desired Jobs</a></li>
-                <li><a class="dropdown-item" href="#myexperience">Work Experience and Education</a></li>
-                <li><a class="dropdown-item" href="#myskills">Skils and Desired Roles</a></li>
-                <li><a class="dropdown-item" href="#myprojects">Projects</a></li>
-                
-              </ul>
-            </li>
-          </ul>
-          
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/d4bd3dfc55.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="steyles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar  bg-dark navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a style="color:aliceblue" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Go-To
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#aboutme">Who am I</a></li>
+              <li><a class="dropdown-item" href="#locateme">Location, Authorisation and Desired Jobs</a></li>
+              <li><a class="dropdown-item" href="#myexperience">Work Experience and Education</a></li>
+              <li><a class="dropdown-item" href="#myskills">Skils and Desired Roles</a></li>
+              <li><a class="dropdown-item" href="#myprojects">Projects</a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-3 mb-3">
+    <div class="card mb-3">
+      <div class="row g-0" id="profileHeader">
+        <div class="row pt-3">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/phila.jpg" class="img-fluid" alt="Image to be shown here" />
+            </div>
+          </div>
+          <div class="col-sm-6" id="sec">
+            
+            
+              <div class="card-body">
+                <h5 id="card-title"></h5>
+                <p class="card-text">
+                  <span id="Experience"></span>
+                </p>
+                <p class="card-text">
+                  <span id="prefAmount"></span>
+                </p>
+                <a href="https://github.com/pbhaninaa" class="btn btn-primary"> <i class="fa fa-github"></i> Go my
+                  GitHub</a>
+
+                <a href="https://expo.dev/snacks" class="btn btn-primary">
+
+                  <i class="fa fa-snackexpo"></i> Snack Expo
+
+                </a>
+                <a href="linkedin.com/in/mr-p-bhani" class="btn btn-primary">
+
+                  <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card-body">
+
+            <div class="buttonsContainer">
+
+
+
+            </div>
+
+
+          </div>
         </div>
       </div>
-    </nav>
-    
-    
-    <div class="container mt-3 mb-3">
-        <div class="card mb-3">
-        <div class="row g-0" id="profileHeader" >
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="aboutme">
+      <div class="card-header"> <i class="fa fa-user"></i> About Me</div>
+      <div class="card-body col-10">
+
+        <p class="card-text">
+          I am Philasande Bhani a young graduate of <span id="age"></span> years.<br><br>
+          I have a National Diploma in Information Technology and a determination
+          to be one of the best in the field, For the past <span id="years"></span>years
+          I worked as an intern for a software development firm where I have gained valuable insight on how a successful
+          company operates.
+          I have the skills and training needed to help develop and maintain software programs and
+          to make improvements that will enhance functionality.<br><br> I have outstanding problem skills with
+          the ability to work with technical and abstract concepts efficiently. I also have extensive
+          knowledge of JavaScript, Java, Spring and Hibernate Framework, Python 3, HTML5 with CSS3 and
+          JavaScript Angular 4+ with TypeScript, Spring Boot, React and React Native, Other Software Development
+          Methodologies, Software Development Tools, Containerization, DevOps foundation.<br><br>
+          I have excellent communication skills with the ability to work directly with clients to provide
+          outstanding customer service. After talking with the clients, I can determine ways to improve
+          performance, speed, and usability and then relay this information to programmers. I have also acquired
+          the ability to troubleshoot technical issues to find the cause and to implement a solution to problems
+          as they arise.<br><br>
+          I have the skills to explain the functionality and other technical issues to other professionals and
+          non-technical users. I pay close attention to details and I can stay focused on the task at hand for
+          long periods to get the job done. I stay updated on all the latest changes that take place in the
+          industry.
+        </p>
+      </div>
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="locateme">
+      <div class="card-header" id="card-header"><i class="fa fa-globe"></i> Location and remote preferences</div>
+      <div class="card-body">
+        <h6 class="card-text" id="remote">Remote</h6>
+        <ul>
+          <li id="remote-item">I can work enywhere if it will be fully remote.</li>
+        </ul>
+        <h6 class="card-text" id="hybrid">Hybrid</h6>
+        <ul>
+          <li id="hybrid-item">In every South African provinces </span>
+          </li>
+        </ul>
+        <h6 class="card-text" id="local">Local</h6>
+        <ul>
+          <li id="local-item">In every South African provinces</li>
+        </ul>
+      </div>
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="myauthorisation">
+      <div class="card-header"><i class="fa person-digging"></i> Work Authorisation</div>
+
+      <div class="card-body">
+        <ul>
+          <li><span>Africa :</span> 100% authorised</li>
+          <li><span>Around the globe :</span>Remote</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="myjob">
+      <div class="card-header"> <i class="fa fa-briefcase"></i> Ideal next job</div>
+      <div class="card-body">
+        <h6 class="card-title">As a Junior Software Developer</h6>
+        <p class="card-text" id="idealJob">
+          I would like to assist the development team with all aspects of
+          software design and coding.<br> I would like my primary role to be learning the codebase, attending
+          design meetings, writing basic code, fixing bugs, and assisting the Development Manager in all
+          design-related tasks.<br> I am most proficient in using Java and Spring Boot as a framework, and I
+          would like to work with Microsoft Azure to manage my projects.<br> I am looking for a company that
+          will aid in my development and supports my career growth. Please note that my notice period is
+          1 week.
+        </p>
+      </div>
+    </div>
+
+    <!-- === Work History === -->
+
+    <div class="card text-dark bg-light mb-3" id="myexperience">
+      <div class="card-header"> <i class="fa fa-solid fa-briefcase"></i> Work History</div>
+      <div class="card-body">
+        <h6 class="card-title">Reverside Junior Java Full-Stack Developer <i class="fa fa-briefcase"></i></h6>
+        <p class="card-text">Current Employer</p>
+        <ul>
+          <li>Designing and implementing Java-based applications.</li>
+          <li>Analyzing user requirements to inform application design.</li>
+          <li>Defining application objectives and functionality.</li>
+          <li>Aligning application design with business goals.</li>
+          <li>Developing and testing software.</li>
+          <li>Supporting Clients with existing systems.</li>
+        </ul>
+        <h6 class="card-title">Geeks4learning Java Full-Stack Developer Trainee <i class="fa fa-briefcase"></i></h6>
+        <p class="card-text"> Completed a 12-months rigorous blended-learning program at Geeks4Learning, covering
+          industry-relevant theoretical and practical training, using internationally renowned proficiency assessment
+          tools as a part of the program. The following was covered in the 12- months:</p>
+        <ul>
+          <li>Soft Skills / Workplace Skills such as verbal and non-verbal communication, work ethics, HR processes,
+            teamwork, etc.</li>
+          <li>MICT Seta accredited training material; NQF 5 Systems Development.</li>
+          <li>Geeks4Learning industry-relevant courses aligned with Microsoft such as Advanced Programming Concepts,
+            Front-End Development, etc. (Listed in the above technology stack.)</li>
+          <li>Project-Simulation based on a problem statement, where theoretical understanding is applied practically to
+            simulate a real-life project, using the relevant tools and technologies.</li>
+        </ul>
+        <h6 class="card-title">MLab(Code-Tribe) React Front-End Developer Trainee <i class="fa fa-briefcase"></i></h6>
+        <p class="card-text">Completed a 12-month training program at MLab (CodeTribe), covering industry-relevant
+          theoretical and practical training, using internationally renowned proficiency assessment tools as a part of
+          the program. The following was covered in the 12-months:</p>
+        <ul>
+          <li>Develop project concepts and maintain optimal workflow.</li>
+          <li>Complete detailed programming and development tasks for public and internal websites.</li>
+          <li>Carry out quality assurance tests to discover errors and optimize usability.</li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="myeducation">
+      <div class="card-header"><i class="fa fa-book"></i> Education</div>
+      <div class="card-body">
+        <h6 class="card-title" id="education1">Learnership, January 2022 – December 2022</h6>
+        <p class="card-text" id="education-description1">System development NQF5</p>
+        <h6 class="card-title" id="education">Walter Sisulu University, February 2017 – November 2020</h6>
+        <p class="card-text" id="education-description">National Dilpoma in Information Technology</p>
+        <h6 class="card-title" id="education1">Ntabezulu Senior Secondary School, January 2013 – November 2015</h6>
+        <p class="card-text" id="education-description1">Matric/Grade 12</p>
+
+      </div>
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="myskills">
+      <div class="card-header"><i class="fa fa-person-digging"></i> Skills</div>
+      <div class="card-body">
+        <h6 class="card-title">Tools and Technologies</h6>
+        <p class="card-text">
+          Git,
+          GitHub,
+          GitLab,
+          Slack,
+          Microsoft Teams,
+          Trello,
+          Jira,
+          Azure,
+          Docker,
+          Microsoft Office.
+        </p>
+        <h6 class="card-title"> Software Development</h6>
+        <p class="card-text">
+          Java,
+          vb.Net,
+          Nodejs,
+          Angular,
+          React,
+          React Native,
+          JavaScript,
+          TypeScript,
+          HTML5,
+          CSS,
+          bootstrap,
+          JSON,<br />
+          Spring Boot,
+          Hibernate,
+          XML,
+
+          Web APIs,
+          Web Services,
+          Docker,
+          Linux.
+        </p>
+        <h6 class="card-title"> Databases </h6>
+        <p class="card-text">
+          MongoDB,
+          NoSQL,
+          MySQL,
+          SQL Workbench,
+          Postgres,
+          Microsoft Access.
+        </p>
+      </div>
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="myroles">
+      <div class="card-header"> <i class="fa fa-briefcase"></i> Desired Roles</div>
+      <div class="card-body col-6">
+        <ul>
+          <li>Full Stack Java Developer</li>
+          <li>Java Developer - Web Applications</li>
+          <li>Java Software Engineer - Full Stack</li>
+          <li>Java Full Stack Engineer</li>
+          <li>Java Full Stack Architect</li>
+          <li>Java Full Stack Tech Lead</li>
+          <li>Java Full Stack Consultant</li>
+          <li>Full Stack Developer - Java and Angular</li>
+          <li>Full Stack Java Developer - Microservices</li>
+          <li>Java Full Stack Developer - Cloud Computing</li>
+          <li>Java Full Stack Developer - Mobile App Development</li>
+          <li>Java Full Stack Developer - E-commerce</li>
+          <li>Java Full Stack Developer - Big Data</li>
+          <li>Full Stack Engineer - Java and React</li>
+          <li>Sql Developer</li>
+        </ul>
+      </div>
+    </div>
+    <!-- ======== -->
+    <div class="card text-dark bg-light mb-3" id="myprojects">
+      <div class="card-header"><i class="fa fa-r-project"></i> Projects</div>
+      <div class="card-body">
+
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
           <div class="col-md-4">
-            <img
-              src="./images/phila.jpg"
-              class="img-fluid rounded-start"
-              alt="Image to be shown here"
-            />
+            <a href="" onclick="project()">
+              <img id="img" src="./images/highSchool.PNG" class="img-fluid rounded-start mt-3 mb-3 ms-3"
+                alt="Image to be shown here" /></a>
+
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 id="card-title"></h5>
-              <p class="card-text">
-                <span id="Experience"></span>
-              </p>
-              <p class="card-text">
-                <span id="prefAmount"></span>
-              </p>
+              <h5 id="card-title">High School Application System</h5>
+              <p class="card-text">This is a school admission system that facilitates the application process for both
+                learners and administrators. Learners can search for schools they are interested in and apply online by
+                first registering with the system. Administrators, on the other hand, can log in and access the
+                applications received, then process them accordingly.
 
-              <p class="card-text">
-                <a href="https://github.com/pbhaninaa">GitHub: <i class="fa fa-github"></i></a>
-                <a href="linkedin.com/in/mr-p-bhani">LinkedIn: <i class="fa fa-linkedin"></i></a>
+                The system was developed using AngularJS for the frontend and Spring Boot with Java for the backend,
+                providing a robust and reliable foundation for the application. By leveraging these technologies, the
+                system can deliver a fast and seamless user experience, with intuitive and user-friendly interfaces for
+                both learners and administrators. This ensures that learners can easily find the schools they want and
+                apply with minimal hassle, while administrators can efficiently manage the applications they receive.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- ======== -->
-    <div class="card text-dark bg-light mb-3" id="aboutme">
-        <div class="card-header"> <i class="fa fa-user"></i>   About Me</div>
-        <div class="card-body col-10">
-          
-          <p class="card-text" >
-            I am Philasande Bhani a young graduate of <span id="age"></span> years.<br><br>
-            I have a National Diploma in Information Technology and a determination
-            to be one of the best in the field, For the past <span id="years"></span>years 
-            I worked as an intern for a software development firm where I have gained valuable insight on how a successful company operates.
-            I have the skills and training needed to help develop and maintain software programs and 
-            to make improvements that will enhance functionality.<br><br> I have outstanding problem skills with
-            the ability to work with technical and abstract concepts efficiently. I also have extensive
-            knowledge of JavaScript, Java, Spring and Hibernate Framework, Python 3, HTML5 with CSS3 and 
-            JavaScript Angular 4+ with TypeScript, Spring Boot, React and React Native, Other Software Development
-            Methodologies, Software Development Tools, Containerization, DevOps foundation.<br><br>
-            I have excellent communication skills with the ability to work directly with clients to provide 
-            outstanding customer service. After talking with the clients, I can determine ways to improve 
-            performance, speed, and usability and then relay this information to programmers. I have also acquired
-            the ability to troubleshoot technical issues to find the cause and to implement a solution to problems
-            as they arise.<br><br>
-            I have the skills to explain the functionality and other technical issues to other professionals and 
-            non-technical users. I pay close attention to details and I can stay focused on the task at hand for 
-            long periods to get the job done. I stay updated on all the latest changes that take place in the 
-            industry.
-          </p>
-        </div>
-      </div> 
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="locateme">
-        <div class="card-header" id="card-header"><i class="fa fa-globe"></i> Location and remote preferences</div>
-        <div class="card-body">
-          <h6 class="card-text" id="remote">Remote</h6>
-          <ul>
-            <li id="remote-item"></li>
-          </ul>
-          <h6 class="card-text" id="hybrid"></h6>
-          <ul>
-            <li id="hybrid-item"></span>
-            </li>
-          </ul>
-          <h6 class="card-text" id="local"></h6>
-          <ul>
-            <li id="local-item"></li>
-          </ul>
-        </div>
-      </div>
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="myauthorisation">
-        <div class="card-header"><i class="fa person-digging"></i> Work Authorisation</div>
+        <hr>
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
+          <div class="col-md-4">
+            <a href="" onclick="project()">
+              <img id="img" src="./images/Hotel.PNG" class="img-fluid rounded-start mt-3 mb-3 ms-3"
+                alt="Image to be shown here" /></a>
 
-        <div class="card-body">
-            <ul>
-                <li><span>Africa :</span> 100% authorised</li>
-                <li><span>Around the globe :</span>Remote</li>
-            </ul>
-        </div>
-      </div>
-     
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="myjob">
-        <div class="card-header"> <i class="fa fa-briefcase"></i>  Ideal next job</div>
-        <div class="card-body">
-          <h6 class="card-title">As a Junior Software Developer</h6>
-          <p class="card-text" id="idealJob"></p>
-        </div>
-      </div>
-      
-      <!-- === Work History === -->
-    
-      <div class="card text-dark bg-light mb-3" id="myexperience">
-        <div class="card-header"> <i class="fa fa-solid fa-briefcase"></i>  Work History</div>
-        <div class="card-body"> 
-            <h6 class="card-title" >Reverside Junior Java Full-Stack Developer <i class="fa fa-briefcase"></i></h6>
-            <p class="card-text" >Current Employer</p>
-            <ul>
-                <li>Designing and implementing Java-based applications.</li>
-                <li>Analyzing user requirements to inform application design.</li>
-                <li>Defining application objectives and functionality.</li>
-                <li>Aligning application design with business goals.</li>
-                <li>Developing and testing software.</li>
-                <li>Supporting Clients with existing systems.</li>
-            </ul>
-            <h6 class="card-title">Geeks4learning Java Full-Stack Developer Trainee <i class="fa fa-briefcase"></i></h6>
-            <p class="card-text" > Completed a 12-months rigorous blended-learning program at Geeks4Learning, covering industry-relevant theoretical and practical training, using internationally renowned proficiency assessment tools as a part of the program. The following was covered in the 12- months:</p>
-            <ul>
-                <li>Soft Skills / Workplace Skills such as verbal and non-verbal communication, work ethics, HR processes, teamwork, etc.</li>
-                <li>MICT Seta accredited training material; NQF 5 Systems Development.</li>
-                <li>Geeks4Learning industry-relevant courses aligned with Microsoft such as Advanced Programming Concepts, Front-End Development, etc. (Listed in the above technology stack.)</li>
-                <li>Project-Simulation based on a problem statement, where theoretical understanding is applied practically to simulate a real-life project, using the relevant tools and technologies.</li>
-            </ul>
-            <h6 class="card-title" >MLab(Code-Tribe) React Front-End Developer Trainee <i class="fa fa-briefcase"></i></h6>
-            <p class="card-text" >Completed a 12-month training program at MLab (CodeTribe), covering industry-relevant theoretical and practical training, using internationally renowned proficiency assessment tools as a part of the program. The following was covered in the 12-months:</p>
-            <ul>
-                <li>Develop project concepts and maintain optimal workflow.</li>
-                <li>Complete detailed programming and development tasks for public and internal websites.</li>
-                <li>Carry out quality assurance tests to discover errors and optimize usability.</li>
-            </ul>
-           
-        </div>
-      </div>
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="myeducation">
-        <div class="card-header"><i class="fa fa-book"></i> Education</div>
-        <div class="card-body">
-           <h6 class="card-title" id="education"></h6>
-            <p class="card-text" id="education-description"></p>
-            <h6 class="card-title" id="education1"></h6>
-            <p class="card-text" id="education-description1"></p>
-        </div>
-      </div>
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="myskills">
-        <div class="card-header"><i class="fa fa-person-digging"></i> Skills</div>
-        <div class="card-body">
-            <h6 class="card-title">Tools and Technologies</h6>
-            <p class="card-text">
-              Git,
-              GitHub,
-              GitLab,
-              Slack,
-              Microsoft Teams,
-              Trello,
-              Jira,
-              Azure,             
-              Docker,
-              Microsoft Office.
-            </p>
-            <h6 class="card-title"> Software Development</h6>
-            <p class="card-text">
-              Java,     
-              vb.Net,
-              Nodejs,
-              Angular,
-              React,
-              React Native,
-              JavaScript,
-              TypeScript,
-              HTML5,
-              CSS,
-              bootstrap,
-              JSON,<br />
-              Spring Boot,
-              Hibernate,
-              XML, 
-             
-              Web APIs,
-              Web Services,
-              Docker,
-              Linux.
-            </p>
-            <h6 class="card-title"> Databases </h6>
-            <p class="card-text">
-            MongoDB,
-            NoSQL,
-            MySQL,
-            SQL Workbench,
-            Postgres,
-            Microsoft Access.
-            </p>
-        </div>
-      </div>
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="myroles">
-        <div class="card-header"> <i class="fa fa-briefcase"></i>  Desired Roles</div>
-        <div class="card-body col-6" >
-            <ul>
-                <li>Full Stack Java Developer</li>
-                <li>Java Developer - Web Applications</li>
-                <li>Java Software Engineer - Full Stack</li>
-                <li>Java Full Stack Engineer</li>
-                <li>Java Full Stack Architect</li>
-                <li>Java Full Stack Tech Lead</li>
-                <li>Java Full Stack Consultant</li>
-                <li>Full Stack Developer - Java and Angular</li>
-                <li>Full Stack Java Developer - Microservices</li>
-                <li>Java Full Stack Developer - Cloud Computing</li>
-                <li>Java Full Stack Developer - Mobile App Development</li>
-                <li>Java Full Stack Developer - E-commerce</li>
-                <li>Java Full Stack Developer - Big Data</li>
-                <li>Full Stack Engineer - Java and React</li>
-                <li>Sql Developer</li>
-              </ul>
-        </div>
-      </div>
-      <!-- ======== -->
-      <div class="card text-dark bg-light mb-3" id="myprojects">
-        <div class="card-header"><i class="fa fa-r-project"></i>  Projects</div>
-        <div class="card-body">
-      
-            <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="" onclick="project()">
-                  <img
-                  id="img"
-                  src="./images/highSchool.PNG"
-                  class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                  alt="Image to be shown here"
-                /></a>
-                  
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 id="card-title">High School Application System</h5>                    
-                    <p class="card-text">This is a school admission system that facilitates the application process for both learners and administrators. Learners can search for schools they are interested in and apply online by first registering with the system. Administrators, on the other hand, can log in and access the applications received, then process them accordingly.
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title">Hotel Management System</h5>
+              <p class="card-text">This system enables users to choose a hotel and room type (single or double) and
+                check the availability of the selected room before making a payment. To use the system, users need to
+                log in and authenticate their details, which will be saved in the database. Additionally, users are
+                allowed to cancel their bookings up to 24 hours before the scheduled check-in time.</p>
 
-                      The system was developed using AngularJS for the frontend and Spring Boot with Java for the backend, providing a robust and reliable foundation for the application. By leveraging these technologies, the system can deliver a fast and seamless user experience, with intuitive and user-friendly interfaces for both learners and administrators. This ensures that learners can easily find the schools they want and apply with minimal hassle, while administrators can efficiently manage the applications they receive.</p>     
-                    </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="" onclick="project()">
-                    <img
-                    id="img"
-                    src="./images/Hotel.PNG"
-                    class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                    alt="Image to be shown here"
-                  /></a>
-                  
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 id="card-title">Hotel Management System</h5>                    
-                    <p class="card-text">This system enables users to choose a hotel and room type (single or double) and check the availability of the selected room before making a payment. To use the system, users need to log in and authenticate their details, which will be saved in the database. Additionally, users are allowed to cancel their bookings up to 24 hours before the scheduled check-in time.</p>     
-                   
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="https://snack.expo.dev/@pbhaninaa/covid-19">
-                    <img
-                    id="img"
-                    src="./images/Covid.PNG"
-                    class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                    alt="Image to be shown here"
-                  /></a>
-                 
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 id="card-title">Covid-19 App</h5>                    
-                    <p class="card-text">This mobile application displays statistics for Covid-19, with one section showing data for South Africa (my home country) and the other section showing global statistics. On the landing page, there are two buttons: one to call healthcare and another to send an SMS if possible. The menu bar at the top provides more information about the statistics. I developed this application using ReactJS.</p>     
-                    
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="" onclick="project()">
-                    <img
-                    id="img"
-                    src="./images/Calculator.PNG"
-                    class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                    alt="Image to be shown here"
-                  /></a>
-                  
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 id="card-title">Sipmle Calculator</h5>                    
-                    <p class="card-text">This application is a multi-functional tool that includes three features: percentage, average, and calculator. With the percentage feature, users can input the initial amount and desired percentage to calculate the actual percentage amount from the initial amount. The average feature allows users to calculate the average with given inputs. The third feature allows users to input two numbers and calculate their sum, difference, product or quotient. The application is developed using vb.NET and utilizes Microsoft Access for the database and MySQL for data manipulation.</p>     
-                    
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="https://snack.expo.dev/@pbhaninaa/weather-app?platform=web">
-                    <img
-                    id="img"
-                  src="./images/Weather.PNG"
-                  class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                  alt="Image to be shown here"
-                /></a>
-                  
-                </div>
-                <div class="col-md-8" >
-                  <div class="card-body">
-                    <h5 id="card-title">Weather App</h5>                    
-                    <p class="card-text">This mobile application is designed for weather forecasting. It allows users to search for the weather conditions of a specific location or view their current location's weather automatically. The application also provides future weather forecasts for the upcoming days. The app was developed using React Native.</p>     
-                  </div>
-                </div>
-              </div>
-              <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="" onclick="project()">
-                    <img
-                    id="img"
-                  src="./images/JobFinder.PNG"
-                  class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                  alt="Image to be shown here"
-                /></a>
-                  
-                </div>
-                <div class="col-md-8" >
-                  <div class="card-body">
-                    <h5 id="card-title">Job Finder Mobile App</h5>                    
-                    <p class="card-text">This mobile application is designed to display Advertised Software Developer jobs. I used the data from Jsearch api and created my application with React Native </p>     
-                  </div>
-                </div>
-              </div>
-              <div class="row g-0 mb-3 mt-3" id="profileHeader">
-                <div class="col-md-4">
-                  <a href="" onclick="project()">
-                    <img
-                    id="img"
-                  src="./images/JobFinder.PNG"
-                  class="img-fluid rounded-start mt-3 mb-3 ms-3"
-                  alt="Image to be shown here"
-                /></a>
-                  
-                </div>
-                <div class="col-md-8" >
-                  <div class="card-body">
-                    <h5 id="card-title">Job Finder Mobile App</h5>                    
-                    <p class="card-text">This mobile application is designed to display Advertised Software Developer jobs. I used the data from Jsearch api and created my application with React Native </p>     
-                  </div>
-                </div>
-              </div>
-              
-              
+            </div>
+          </div>
         </div>
+        <hr>
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
+          <div class="col-md-4">
+            <a href="https://snack.expo.dev/@pbhaninaa/covid-19">
+              <img id="img" src="./images/Covid.PNG" class="img-fluid rounded-start mt-3 mb-3 ms-3"
+                alt="Image to be shown here" /></a>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title">Covid-19 App</h5>
+              <p class="card-text">This mobile application displays statistics for Covid-19, with one section showing
+                data for South Africa (my home country) and the other section showing global statistics. On the landing
+                page, there are two buttons: one to call healthcare and another to send an SMS if possible. The menu bar
+                at the top provides more information about the statistics. I developed this application using ReactJS.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
+          <div class="col-md-4">
+            <a href="" onclick="project()">
+              <img id="img" src="./images/Calculator.PNG" class="img-fluid rounded-start mt-3 mb-3 ms-3"
+                alt="Image to be shown here" /></a>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title">Sipmle Calculator</h5>
+              <p class="card-text">This application is a multi-functional tool that includes three features: percentage,
+                average, and calculator. With the percentage feature, users can input the initial amount and desired
+                percentage to calculate the actual percentage amount from the initial amount. The average feature allows
+                users to calculate the average with given inputs. The third feature allows users to input two numbers
+                and calculate their sum, difference, product or quotient. The application is developed using vb.NET and
+                utilizes Microsoft Access for the database and MySQL for data manipulation.</p>
+
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
+          <div class="col-md-4">
+            <a href="https://snack.expo.dev/@pbhaninaa/weather-app?platform=web">
+              <img id="img" src="./images/Weather.PNG" class="img-fluid rounded-start mt-3 mb-3 ms-3"
+                alt="Image to be shown here" /></a>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title">Weather App</h5>
+              <p class="card-text">This mobile application is designed for weather forecasting. It allows users to
+                search for the weather conditions of a specific location or view their current location's weather
+                automatically. The application also provides future weather forecasts for the upcoming days. The app was
+                developed using React Native.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
+          <div class="col-md-4">
+            <a href="" onclick="project()">
+              <img id="img" src="./images/JOb.PNG" class="img-fluid rounded-start mt-3 mb-3 ms-3"
+                alt="Image to be shown here" /></a>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title">Job Finder Mobile App</h5>
+              <p class="card-text">This mobile application is designed to display Advertised Software Developer jobs. I
+                used the data from Jsearch api and created my application with React Native </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0 mb-3 mt-3" id="profileHeader">
+          <div class="col-md-4">
+            <a href="" onclick="project()">
+              <img id="img" src="" class="img-fluid rounded-start mt-3 mb-3 ms-3" alt="Image to be shown here" /></a>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="card-title">Job Profile Creator Mobile App</h5>
+              <p class="card-text">This mobile application is designed to help users to create their Profiles. It is
+                created using React Native </p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script>
+
+    // ===============================================================
+    document.getElementById("card-title").innerHTML = "Philasande Bhani";
+    const d = new Date();
+    let year = d.getFullYear();
+    let age = year - 1998;
+    let experience_years = year - 2021;
+    document.getElementById("years").innerHTML = experience_years;
+    document.getElementById("age").innerHTML = age;
+    document.getElementById("Experience").innerHTML =
+      year - 2021 + "+ years of Working Experience";
+
+    document.getElementById("prefAmount").innerHTML =
+      "Prefered Salary R15 000+ monthly Or R150 000+ anually";
+
+    function project() {
+      alert("Soon to be published");
+    }
+    function backHome() {
+      window.location.href = "home.html";
+    }
+    function contact() {
+      window.location.href = "contact.html";
+      alert("Contact not yet published", navigator.geolocation.getCurrentPosition(showPosition, showError));
+    }
+    function locateMe() {
+      alertgetCurrentPosition()
+    }
+
+
+
+  </script>
+</body>
+
 </html>

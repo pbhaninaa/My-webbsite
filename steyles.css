@@ -55,7 +55,40 @@ img {
 .container .card .card-body .card-text {
 	color: grey;
 }
+#heading-card{
+	padding-top: '50px';
+	flex: auto;
+	align-self: center;
+	align-items: start;
+	justify-content: center;
+	color:#3498db ;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	
 
+}
+.linking{
+	border: none;
+	border-radius: "5px";
+	background-color: #1a5f7a;
+	color: #f2f2f2;
+	width: 20%;
+	height:fit-content;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:6%;
+	cursor: pointer;
+	transition:.5s ease all;
+
+
+}
+.buttonsContainer{
+	flex-direction:column ;
+	display: flex;
+	padding : 10;
+	text-decoration:none;
+
+
+}
 ul li {
 	color: gray;
 	font-size: small;
@@ -99,7 +132,12 @@ a {
 	float: left;
 	width: 25%;
 }
+#sec{
+	display: flex;
+	justify-content: space-between;
+	border: none;
 
+}
 .meal-photo {
 	width: 100%;
 	margin: 0;
@@ -119,6 +157,7 @@ a {
 	opacity: 1;
 	transform: scale(1.03);
 }
+
 
 .container ul li iframe {
 	margin: 3px 3px 3px 5px;
