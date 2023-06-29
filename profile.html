@@ -59,14 +59,14 @@
 
 
             <div class="card-body">
-              <h5 id="card-title"></h5>
-              <p class="card-text">
+              <h2 id="card-title"></h2>
+              <h5 class="card-text">
                 <span id="Experience"></span>
-              </p>
-              <p class="card-text">
+              </h5>
+              <h5 class="card-text mb-2">
                 <span id="prefAmount"></span>
-              </p>
-              <p class="card-text">With a National Diploma in Information Technology and a strong drive to excel in the field, I bring valuable experience
+              </h5>
+              <p class="card-text mt-5">With a National Diploma in Information Technology and a strong drive to excel in the field, I bring valuable experience
               as an intern at a software development firm. Equipped with the necessary skills and training, I am proficient in
               developing and maintaining software programs while implementing enhancements to improve functionality. Through
               collaboration with experienced developers, I have honed my technical abilities and gained insights into effective
@@ -470,10 +470,10 @@
     document.getElementById("years").innerHTML = experience_years;
     document.getElementById("age").innerHTML = age;
     document.getElementById("Experience").innerHTML =
-      year - 2021 + "+ years of Working Experience";
+      year - 2020 + "+ years of Working Experience" + "<br>" ;
+  document.getElementById("prefAmount").innerHTML =
+    "Preferred Salary: R15,000+ monthly," + "<br>" + "or R150,000+ annually.";
 
-    document.getElementById("prefAmount").innerHTML =
-      "Prefered Salary R15 000+ monthly Or R150 000+ anually";
 
     function project() {
       alert("Soon to be published");
