@@ -2,7 +2,6 @@ body {
 	background-color: #1a5f7a;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	color: black;
-  height: fit-content;
 }
 
 .navbar-brand {
@@ -13,6 +12,7 @@ body {
 	border-radius: 5px;
 	text-align: center;
 	border: none;
+	margin-left: 2%;
 }
 .head{	
 	text-align: center;
@@ -22,7 +22,7 @@ body {
 	border: none;
 	background-color: #2a728f;
 	color: #fff;
-	border-radius: 10px 0px 10px 0px;
+	border-radius: 10px;
 }
 
 .card-header {
@@ -106,11 +106,6 @@ a {
 	color: lightgray;
 }
 
-.navbar-nav .nav-link:hover {
-	background-color: #1a5f7a;
-	color: aliceblue;
-	border-radius: 7px 0px 7px 0px;
-}
 
 .navbar-nav .navbar-item:hover {
 	color: white;
@@ -152,12 +147,19 @@ a {
 	transform: scale(1.15);
 	transition: transform 0.5s, opacity 0.5s;
 }
-
+.hometext{
+	color: aliceblue;
+}
 .meal-photo img:hover {
 	opacity: 1;
 	transform: scale(1.03);
 }
+#homeh{
+ color: #000;
+ font-size:2em ;
+ text-shadow: inset 0px 0px 20px rgba(0,0,0,2)
 
+}
 
 .container ul li iframe {
 	margin: 3px 3px 3px 5px;
@@ -182,7 +184,7 @@ body {
 .navbar-nav .nav-link:hover {
 	background-color: #1a5f7a;
 	color: aliceblue;
-	border-radius: 7px 0px 7px 0px;
+	border-radius: 7px ;
 }
 
 .navbar-nav .navbar-item:hover {
