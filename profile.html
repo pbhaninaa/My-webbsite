@@ -510,24 +510,29 @@
             <!-- Section: Social media -->
             <section class="mb-4">
               <!-- Facebook -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i
-                  class="fab fa-facebook-f"></i></a>
-
+              <a class="btn btn-outline-light btn-floating m-1"target="_blank" href="https://www.facebook.com" role="button" data-bs-toggle="tooltip" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            
               <!-- Google -->
-              <a class="btn btn-outline-light btn-floating m-1" href="www.google.com" role="button"><i
-                  class="fab fa-connectdevelop" style="color: #ffffff;"></i></a>
-
+              <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.google.com" role="button" data-bs-toggle="tooltip" title="Google">
+                <i class="fab fa-connectdevelop"></i>
+              </a>
+            
               <!-- WhatsApp -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.whatsapp.com" role="button"><i
-                  class="fab fa-whatsapp"></i></a>
-
+              <a class="btn btn-outline-light btn-floating m-1"target="_blank" href="https://www.whatsapp.com" role="button" data-bs-toggle="tooltip" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            
               <!-- Linkedin -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mr-p-bhani/"
-                role="button"><i class="fab fa-linkedin-in"></i></a>
-
+              <a class="btn btn-outline-light btn-floating m-1"target="_blank" href="https://www.linkedin.com/in/mr-p-bhani/" role="button" data-bs-toggle="tooltip" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            
               <!-- Github -->
-              <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/pbhaninaa" role="button"><i
-                  class="fab fa-github"></i></a>
+              <a class="btn btn-outline-light btn-floating m-1"target="_blank" href="https://github.com/pbhaninaa" role="button" data-bs-toggle="tooltip" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
             </section>
             <!-- Section: Social media -->
           </div>
@@ -537,6 +542,8 @@
     </div>
   </div>
   <script>
+  var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  var tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
     // ===============================================================
     document.getElementById("card-title").innerHTML = "Philasande Bhani";
@@ -546,7 +553,6 @@ let age = year - 1998;
 let experience_years = year - 2022;
 
 
-window.onload = function() {
   let level = '';
 
   if (experience_years < 2) {
@@ -558,7 +564,7 @@ window.onload = function() {
   }
 
   document.getElementById('level').innerText = level;  
-}
+
 
 document.getElementById("level").innerHTML = level;
     document.getElementById("years").innerHTML = experience_years;

@@ -282,16 +282,16 @@ img {
 	height: 120%;
 }
 .btn {
-	background-color: #102128;
+	background-color: #6b6a69;
 	color: white;
 	border: 2px solid black;
 	outline: none;
-	border-color: #9ecaed;
-	box-shadow: 0 0 10px #9ecaed;
+	border-color: #768998;
+	box-shadow: 0 0 10px #768998;
 }
 .btn:hover  {
-	background-color: rgb(22, 82, 82);
-	color: white;
+	background-color: gray;
+	color: black;
 	border: 2px solid black;
 	border-radius: 7px;
 	outline: none;

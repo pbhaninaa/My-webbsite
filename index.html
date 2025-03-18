@@ -59,18 +59,33 @@
               
               I’m excited about new opportunities to contribute, learn, and grow with a team of like-minded developers. Let's turn great ideas into reality through code! 
             </p>
-            
-            
-
-
-
+                   
             <input type="button" class="btn btn-dark mt-3 mb-5" value="Contact me" onclick="contact()" />
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script >
+
+
+const d = new Date();
+let year = d.getFullYear();
+let age = year - 1998;
+let experience_years = year - 2022;
+  let level = '';
+
+  if (experience_years < 2) {
+    level = 'Junior';
+  } else if (experience_years >= 2 && experience_years < 5) {
+    level = 'Intermediate';
+  } else {
+    level = 'Senior';
+  }
+
+  document.getElementById('level').innerText = level;  
+
+  </script>
 </body>
 
 </html>
