@@ -3,6 +3,27 @@ body {
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	color: black;
 }
+#home_page {
+	font-family: 'Poppins', sans-serif; /* Uses a clean, modern font */
+  
+	background-color: transparent;
+    background-image: url('./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+	height: fit-content;
+}
+#home_page_ {
+	font-family: 'Poppins', sans-serif; /* Uses a clean, modern font */
+  
+	background-color: lightgrey;
+    /* background-image: url('./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg'); */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+	height: fit-content;
+}
+
 footer{
 	align-items: baseline;
 }
@@ -11,6 +32,9 @@ footer{
 	text-align: center;
 	border: none;
 	margin-left: 2%;
+}
+.dropdown-menu{
+	color: #000;
 }
 
 .head {
@@ -21,9 +45,13 @@ footer{
 #back_arrow {
 	color: white;
 }
+#index_card{
+	background-color: transparent;
+	border: none;
+}
 
 #back_arrow:hover {
-	color: #9ecaed;
+	color: #000;
 }
 
 .card-header {
@@ -160,8 +188,16 @@ a {
 }
 
 .hometext {
-	color: aliceblue;
+    color: #000; /* Keeps your original color */
+    font-size: 18px; /* Adjusts to a readable size */
+    font-family: 'Poppins', sans-serif; /* Uses a clean, modern font */
+    line-height: 1.6; /* Improves readability */
+    font-weight: 400; /* Ensures a balanced text weight */
+    text-align: justify; /* Aligns text for a structured look */
+    max-width: 800px; /* Prevents overly wide text blocks */
+    margin: 0 auto; /* Centers the text block */
 }
+
 
 .meal-photo img:hover {
 	opacity: 1;
@@ -171,6 +207,7 @@ a {
 #homeh {
 	color: #000;
 	font-size: 2em;
+	margin-top: -5%;
 	text-shadow: inset 0px 0px 20px rgba(0, 0, 0, 2)
 }
 
@@ -203,9 +240,13 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-	background-color: #1a5f7a;
-	color: aliceblue;
+	background-color: lightgray;
+	color: black;
+	border: 2px solid black;
 	border-radius: 7px;
+	outline: none;
+	border-color: #5c7387;
+	box-shadow: 0 0 10px #647f96;
 }
 
 .navbar-nav .navbar-item:hover {
@@ -241,20 +282,21 @@ img {
 	height: 120%;
 }
 .btn {
-	background-color: #1a5f7a;
+	background-color: #102128;
 	color: white;
 	border: 2px solid black;
 	outline: none;
 	border-color: #9ecaed;
 	box-shadow: 0 0 10px #9ecaed;
 }
-.btn:hover {
-	background-color: rgb(44, 170, 170);
+.btn:hover  {
+	background-color: rgb(22, 82, 82);
 	color: white;
 	border: 2px solid black;
+	border-radius: 7px;
 	outline: none;
-	border-color: #9ecaed;
-	box-shadow: 0 0 10px #9ecaed;
+	border-color: #5c7387;
+	box-shadow: 0 0 10px #647f96;
 }
 
 .swing {
@@ -310,7 +352,7 @@ textarea {
 }
 
 label {
-	color: aliceblue;
+	color: gray;
 	font-weight: 500;
 	size: 15px;
 	text-transform: capitalize;
@@ -325,18 +367,18 @@ input[type="submit"] {
 }
 
 .contactContainer {
+
 	border-radius: 5px;
-	background-color: #f2f2f2;
+	background-color: transparent;
 	padding: 20px;
 	width: 50%;
 	margin: auto;
-	background-color: #1a5f7a;
-	border: 2px solid rgb(39, 114, 114);
+	border: 2px solid gray;
 }
 
 h4 {
 	text-align: center;
-	color: white;
+	color: gray;
 }
 
 .mt-5 {
@@ -355,7 +397,8 @@ h4 {
 
 #profileHeader:hover {
 
-	background-color: #D2DAFF;
+	background-color: rgb(234, 233, 233);
+	color: #000;
 
 }
 
