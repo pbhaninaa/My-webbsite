@@ -262,7 +262,6 @@ body {
 h3 {
 	color: aliceblue;
 	font-weight: bolder;
-
 }
 
 a {
@@ -352,7 +351,7 @@ textarea {
 }
 
 label {
-	color: gray;
+	color: black;
 	font-weight: 500;
 	size: 15px;
 	text-transform: capitalize;
@@ -373,12 +372,12 @@ input[type="submit"] {
 	padding: 20px;
 	width: 50%;
 	margin: auto;
-	border: 2px solid gray;
+	border: none;
 }
 
 h4 {
 	text-align: center;
-	color: gray;
+	color: black;
 }
 
 .mt-5 {

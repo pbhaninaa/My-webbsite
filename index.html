@@ -67,8 +67,6 @@
     </div>
   </div>
   <script >
-
-
 const d = new Date();
 let year = d.getFullYear();
 let age = year - 1998;
@@ -84,6 +82,11 @@ let experience_years = year - 2022;
   }
 
   document.getElementById('level').innerText = level;  
+  function contact() {
+  window.location.href = "contact.html";
+  alert("Contact not yet published", navigator.geolocation.getCurrentPosition(showPosition, showError));
+}
+
 
   </script>
 </body>

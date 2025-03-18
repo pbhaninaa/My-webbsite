@@ -44,6 +44,7 @@ let age = year - 1998;
 let experience_years = year - 2022;
 
 window.onload = function() {
+  const yearsOfExperience = 3; // Replace with your actual years of experience
   let level = '';
 
   if (experience_years < 2) {
@@ -54,7 +55,7 @@ window.onload = function() {
     level = 'Senior';
   }
 
-  document.getElementById('level').innerText = level;  
+  document.getElementById('level').innerText = level;  // Set the level automatically when the page loads
 }
 
 
@@ -107,11 +108,6 @@ function project() {
 
 function backHome() {
   window.location.href = "home.html";
-}
-
-function contact() {
-  window.location.href = "contact.html";
-  alert("Contact not yet published", navigator.geolocation.getCurrentPosition(showPosition, showError));
 }
 
 function locateMe() {
