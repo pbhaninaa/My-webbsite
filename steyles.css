@@ -270,15 +270,12 @@ a {
 	size: inherit;
 }
 
-#pic {
-	border: 2px solid black;
-	border-radius: 7px;
-}
 
 img {
 	border: none !important;
 	width: 110%;
 	height: 120%;
+	border-radius: 7px;
 }
 .btn {
 	background-color: #6b6a69;
