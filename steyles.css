@@ -4,21 +4,17 @@ body {
 	color: black;
 }
 #home_page {
-	font-family: 'Poppins', sans-serif; /* Uses a clean, modern font */
-  
+	font-family: 'Poppins', sans-serif;  
 	background-color: transparent;
     background-image: url('./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 	height: fit-content;
-	
 }
 #home_page_ {
-	font-family: 'Poppins', sans-serif; /* Uses a clean, modern font */
-  
-	background-color: lightgrey;
-    /* background-image: url('./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg'); */
+	font-family: 'Poppins', sans-serif; 
+  	background-color: lightgrey;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
