@@ -17,7 +17,8 @@
 </head>
 
 <body id="home_page">
-  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary sticky-top" data-bs-theme="dark">
+
     <div class="container-fluid">
       <button class="navbar-toggler bg-light pt-3" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -33,59 +34,69 @@
       </div>
     </div>
   </nav>
-  <div class="container mt-5">
-    <div class="card mb-3 mt-3" id="index_card">
+  <div class="container mt-5" style="margin-top: -150px;">
+    <div class="card mb-3 " id="index_card">
       <div class="row g-0 mt-3">
-        <div class="col-md-4 mt-3">
+        <div class="col-md-4 ">
           <figure class="swing mb-5">
             <img id="pic" src="./images/phila.jpg" />
           </figure>
         </div>
-        <div class="col-md-8 mt-3">
+        <div class="col-md-8 mb-5">
           <div class="card-body ms-5">
-            <h3  id="homeh">Java Full-Stack Developer | Problem Solver | Innovator</h3>
+            <h3 id="homeh">Java Full-Stack Developer | Problem Solver | Innovator</h3>
 
 
             <p class="hometext mt-3">
-              Hi, I'm Philasande Bhani, an <span id="level"></span> Developer passionate about building innovative and high-quality software solutions. 
-              With expertise in Java, Spring Boot, Angular, React, Vue, and Android, I specialize in developing scalable and efficient applications that enhance user experience and functionality.
+              Hi, I'm Philasande Bhani, an <span id="level"></span> Developer passionate about building innovative and
+              high-quality software solutions.
+              With expertise in Java, Spring Boot, Angular, React, Vue, and Android, I specialize in developing scalable
+              and efficient applications that enhance user experience and functionality.
               <br /><br />
-              
-              Over the years, I have worked on a variety of projects, including a Hotel Booking System, Merchant Sales App, Stock Management App, and a Calculation App. I enjoy tackling complex technical challenges, optimizing performance, and ensuring seamless system integration.
+
+              Over the years, I have worked on a variety of projects, including a Hotel Booking System, Merchant Sales
+              App, Stock Management App,
+              Calculation App etc.. I enjoy tackling complex technical challenges, optimizing performance, and ensuring
+              seamless system integration.
               <br /><br />
-              
-              I actively participate in hackathons and coding events to stay ahead of industry trends, continuously honing my skills. Detail-oriented and dedicated, I thrive in dynamic environments where collaboration and problem-solving lead to impactful solutions.
+
+              I actively participate in hackathons and coding events to stay ahead of industry trends, continuously
+              honing my skills. Detail-oriented and dedicated, I thrive in dynamic environments where collaboration and
+              problem-solving lead to impactful solutions.
               <br /><br />
-              
-              I’m excited about new opportunities to contribute, learn, and grow with a team of like-minded developers. Let's turn great ideas into reality through code! 
+
+              I’m excited about new opportunities to contribute, learn, and grow with a team of like-minded developers.
+              Let's turn great ideas into reality through code!
             </p>
-                   
-            <input type="button" class="btn btn-dark mt-3 mb-5" value="Contact me" onclick="contact()" />
+
+            <div class="d-flex justify-content-center">
+              <input type="button" class="btn btn-dark mt-3 mb-5" value="Contact me" onclick="contact()" />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script >
-const d = new Date();
-let year = d.getFullYear();
-let age = year - 1998;
-let experience_years = year - 2022;
-  let level = '';
+  <script>
+    const d = new Date();
+    let year = d.getFullYear();
+    let age = year - 1998;
+    let experience_years = year - 2022;
+    let level = '';
 
-  if (experience_years < 2) {
-    level = 'Junior';
-  } else if (experience_years >= 2 && experience_years < 5) {
-    level = 'Intermediate';
-  } else {
-    level = 'Senior';
-  }
+    if (experience_years < 2) {
+      level = 'Junior';
+    } else if (experience_years >= 2 && experience_years < 5) {
+      level = 'Intermediate';
+    } else {
+      level = 'Senior';
+    }
 
-  document.getElementById('level').innerText = level;  
-  function contact() {
-  window.location.href = "contact.html";
-  alert("Contact not yet published", navigator.geolocation.getCurrentPosition(showPosition, showError));
-}
+    document.getElementById('level').innerText = level;
+    function contact() {
+      window.location.href = "contact.html";
+      alert("Contact not yet published", navigator.geolocation.getCurrentPosition(showPosition, showError));
+    }
 
 
   </script>
