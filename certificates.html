@@ -1,125 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/d4bd3dfc55.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
 
-    <link rel="stylesheet" href="steyles.css" />
-    <title>Certificates</title>
-  </head>
-  <body id="home_page_">
-    <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary sticky-top" data-bs-theme="dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="index.html">
-              <i id="back_arrow" class="fas fa-arrow-left"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/d4bd3dfc55.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <div class="container mt-3">
-      <div class="head mt-2 sticky-top">
-        <h3>Certificates</h3>
-        <hr style="height: 2px;color:aliceblue;width: 95%;" />
-      </div>
+  <link rel="stylesheet" href="steyles.css" />
+  <title>Certificates</title>
+</head>
 
-      <!-- Certificates Display Section -->
-      <div class="row" id="certificatesContainer"></div>
+<body id="home_page_">
+  <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="index.html">
+            <i id="back_arrow" class="fas fa-arrow-left"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="head mt-2 sticky-top">
+      <h3>Certificates</h3>
+      <hr style="height: 2px;color:aliceblue;width: 95%;" />
     </div>
 
-    <script>
-      // Array of certificate filenames (PDFs)
-      const certificateFiles = ["My Resume.pdf",
-        "Matric Cetificate.pdf",
-        "Academic Transcript.pdf",
-        "Confirmation letter.pdf",
-        "Java full Stack certificate.pdf",
-        "Java EE 7.pdf",
-        "java se 8 I.pdf",
-        "java se 8.pdf",
-        "Matric Cetificate.pdf",
-        "Spring and Hibernate.pdf",
-        "AngularTs.pdf",
-        "Html.pdf",
-        "SQL.pdf",
-        "Mongo.pdf",
-        "Database NoSQL.pdf",
-        "Python.pdf",
-        "DevOps Foundation.pdf",
-        "Docker.pdf",
-        "Web APIs.pdf",
-        "Web Services.pdf",
-        "XML.pdf",
-        "Linux.pdf",
-        "Methodologies.pdf",
-        "Object-Oriented Programming (OOP).pdf",
-        "OOAD.pdf",
-        "Time Management.pdf",
-        "Team Management.pdf",
-        "Team Facilitation.pdf",
-        "Work Ethics.pdf",
-        "Workplace Conduct.pdf",
-        "Verbal and Non-Verbal Communication.pdf",
-        "Professional Communication.pdf",
-        "Professional Development.pdf",
-        "Laws of Growth.pdf",
-        "Emotional Intelligence.pdf",
-        "Sage 200 Evolution LU2 Maintenance Technician.pdf",
-        "Sage 200 Evolution LU1 Practitioner.pdf"
-      ];
+    <!-- Certificates Display Section -->
+    <div class="row" id="certificatesContainer"></div>
+  </div>
 
-      // Function to dynamically create iframe elements for each certificate
-      function displayCertificates() {
-        const certificatesContainer = document.getElementById("certificatesContainer");
-        
-        // Loop through the certificate files and create iframe elements
-        certificateFiles.forEach((file, index) => {
-          // Create a div to hold each iframe
-          const colDiv = document.createElement("div");
-          colDiv.classList.add("col-6");
+  <script>
+    // Array of certificate filenames (PDFs)
+    const certificateFiles = [
 
-          // Create the iframe element
-          const iframe = document.createElement("iframe");
-          iframe.src = `./certificate/${file}`;
-          iframe.height = "300px"; // You can adjust the height for each iframe as needed
+      "Matric Certificate.pdf",
+      "Academic Transcript.pdf",
+      "Java full Stack certificate.pdf",
+      "Java EE 7.pdf", 
+      "Java se 8 I.pdf",
+      "Java se 8.pdf",
+       "Spring and Hibernate.pdf",
+      // "Python.pdf",
+      "SQL.pdf",
+      "Mongo.pdf",
+      "Web APIs.pdf",
+      "Web Services.pdf",
+      "AngularTs.pdf",
+      "DevOps Foundation.pdf",
+      "Docker.pdf",
+      "Sage 200 Evolution LU2 Maintenance Technician.pdf",
+      "Sage 200 Evolution LU1 Practitioner.pdf",
+      "Object-Oriented Programming (OOP).pdf",
+      "Confirmation letter.pdf",
+      "Methodologies.pdf",
+      "Team Management.pdf",
+      "Workplace Conduct.pdf",
+      "Work Ethics.pdf",
+      "Time Management.pdf",
+      "Emotional Intelligence.pdf",
+      "Laws of Growth.pdf",
+      "Team Facilitation.pdf",
+      "Verbal and Non-Verbal Communication.pdf",
+      "Professional Communication.pdf",
+      "Professional Development.pdf",
+      "OOAD.pdf",
+      "Linux.pdf",
+      "XML.pdf",
 
-          // Append the iframe to the column div
-          colDiv.appendChild(iframe);
+      "Matric Cetificate.pdf",
+      "My Resume.pdf"
+    ];
 
-          // Append the column div to the container
-          certificatesContainer.appendChild(colDiv);
 
-          // Add a line break every 2 certificates (for even layout)
-          if ((index + 1) % 2 === 0) {
-            const rowDiv = document.createElement("div");
-            rowDiv.classList.add("row");
-            certificatesContainer.appendChild(rowDiv);
-          }
-        });
-      }
+    // Function to dynamically create iframe elements for each certificate
+    function displayCertificates() {
+      const certificatesContainer = document.getElementById("certificatesContainer");
 
-      // Call the function to display certificates when the page loads
-      displayCertificates();
-    </script>
-  </body>
+      // Loop through the certificate files and create iframe elements
+      certificateFiles.forEach((file, index) => {
+        // Create a div to hold each iframe
+        const colDiv = document.createElement("div");
+        colDiv.classList.add("col-6");
+
+        // Create the iframe element
+        const iframe = document.createElement("iframe");
+        iframe.src = `./certificate/${file}`;
+        iframe.height = "300px"; // You can adjust the height for each iframe as needed
+
+        // Append the iframe to the column div
+        colDiv.appendChild(iframe);
+
+        // Append the column div to the container
+        certificatesContainer.appendChild(colDiv);
+
+        // Add a line break every 2 certificates (for even layout)
+        if ((index + 1) % 2 === 0) {
+          const rowDiv = document.createElement("div");
+          rowDiv.classList.add("row");
+          certificatesContainer.appendChild(rowDiv);
+        }
+      });
+    }
+
+    // Call the function to display certificates when the page loads
+    displayCertificates();
+  </script>
+</body>
+
 </html>
