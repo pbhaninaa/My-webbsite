@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,20 +22,15 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="steyles.css">
-    <title>Document</title>
+    <title>Contact Form</title>
   </head>
-  <style>
 
-  </style>
   <body id="home_page">
-   
     <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary sticky-top" data-bs-theme="dark">
-
-    <div class="navbar-nav">
-      <a class="nav-link ml-5" href="index.html">
-        <i id="back_arrow" class="fas fa-arrow-left"></i>
-      </a>
-     
+      <div class="navbar-nav">
+        <a class="nav-link ml-5" href="index.html">
+          <i id="back_arrow" class="fas fa-arrow-left"></i>
+        </a>
         <button
           class="navbar-toggler bg-light pt-3"
           type="button"
@@ -46,63 +43,105 @@
           <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          
+          <!-- Navbar content -->
         </div>
       </div>
     </nav>
-     <div class="contactContainer mt-3">
+
+    <div class="contactContainer mt-3">
       <div class="container">
-      <h4>Contact us page</h4>
-      <form form id="contactForm">
-        <label for="fname">Who are you?</label>
-        <input
-          type="text"
-          name="details"
-          id="details"
-          placeholder="Your details.."
-        />
+        <h4>Contact us page</h4>
+        <form id="contactForm">
+          <label for="details">Who are you?</label>
+          <input type="text" name="details" id="details" placeholder="Your details.." required />
 
-        <label for="email">Your email</label>
-        <input type="text" name="email" id="email" placeholder="Your email.." />
-        <label for="email">Your contact number</label>
-        <input type="text" name="number" placeholder="Your cell number.." />
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" placeholder="Your email.." required />
 
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Write something.."
-          style="height: 200px"
-        ></textarea>
+          <label for="number">Your contact number</label>
+          <input type="number" name="number" id="number" maxlength="12" minlength="10" placeholder="Your cell number.." required />
 
-        <div class="row">
-          <div class="col-12">
-            <input
-              type="submit"
-              class="btn btn-dark mt-3 mb-5 ms-4.5"
-              value="Send"
-             
-            />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height: 200px" required></textarea>
+
+          <div class="row">
+            <div class="col-12">
+              <input
+                type="submit"
+                class="btn btn-dark mt-3 mb-5 ms-4.5"
+                value="Send"
+                id="submitBtn"
+                disabled
+              />
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
+    </div>
 
-      
-    </div></div>
-    
     <script>
-        const contactForm = document.getElementById("contactForm");
-        contactForm.addEventListener("submit", function (event) {
-          event.preventDefault();
-          const details = document.getElementById("details").value;
-          const email = document.getElementById("email").value;
-          const message = document.getElementById("message").value;
-          const subject = "Feedback for your application";
-          const body = `Details: ${details}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
-          const mailToLink = `mailto:pbhanina@gmail.com?subject=${subject}&body=${body}`;
-          
-          window.location.href = mailToLink;
-        });
-      </script>
+      const contactForm = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const detailsInput = document.getElementById("details");
+      const emailInput = document.getElementById("email");
+      const numberInput = document.getElementById("number");
+      const messageInput = document.getElementById("message");
+
+      // Function to validate form fields
+      function validateForm() {
+        if (
+          detailsInput.value === "" ||
+          emailInput.value === "" ||
+          numberInput.value === "" ||
+          messageInput.value === ""
+        ) {
+          submitBtn.disabled = true;
+        } else {
+          submitBtn.disabled = false;
+        }
+      }
+
+      detailsInput.addEventListener("input", validateForm);
+      emailInput.addEventListener("input", validateForm);
+      numberInput.addEventListener("input", validateForm);
+      messageInput.addEventListener("input", validateForm);
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const details = detailsInput.value;
+        const email = emailInput.value;
+        const number = numberInput.value;
+        const message = messageInput.value;
+        
+        const subject = "Feedback for your application";
+        const body = `
+          Details: ${details}%0D%0A
+          Email: ${email}%0D%0A
+          Phone Number: ${number}%0D%0A
+          Message: ${message}
+        `;
+        const mailToLink = `mailto:pbhanina@gmail.com?subject=${subject}&body=${body}`;
+        
+        window.location.href = mailToLink;
+      });
+
+      submitBtn.addEventListener("mousemove", function (event) {
+        if (submitBtn.disabled) {
+          const submitBtnRect = submitBtn.getBoundingClientRect();
+          const distanceX = event.clientX - (submitBtnRect.left + submitBtnRect.width / 2);
+          const distanceY = event.clientY - (submitBtnRect.top + submitBtnRect.height / 2);
+          const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+          const moveDistance = 30;
+          if (distance < 100) {
+            const moveX = (distanceX / distance) * moveDistance;
+            const moveY = (distanceY / distance) * moveDistance;
+            submitBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+          } else {
+            submitBtn.style.transform = "translate(0, 0)";
+          }
+        }
+      });
+    </script>
   </body>
 </html>

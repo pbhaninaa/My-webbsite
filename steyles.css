@@ -3,34 +3,38 @@ body {
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	color: black;
 }
+
 #home_page {
-	font-family: 'Poppins', sans-serif;  
+	font-family: 'Poppins', sans-serif;
 	background-color: transparent;
-    background-image: url('./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-	height: fit-content;
-}
-#home_page_ {
-	font-family: 'Poppins', sans-serif; 
-  	background-color: lightgrey;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+	background-image: url('./images/joe-woods-4Zaq5xY5M_c-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	height: fit-content;
 }
 
-footer{
+#home_page_ {
+	font-family: 'Poppins', sans-serif;
+	background-color: lightgrey;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: fit-content;
+}
+
+footer {
 	align-items: baseline;
 }
+
 .navbar-brand {
 	border-radius: 5px;
 	text-align: center;
 	border: none;
 	margin-left: 2%;
 }
-.dropdown-menu{
+
+.dropdown-menu {
 	color: #000;
 }
 
@@ -42,7 +46,8 @@ footer{
 #back_arrow {
 	color: white;
 }
-#index_card{
+
+#index_card {
 	background-color: transparent;
 	border: none;
 }
@@ -77,7 +82,8 @@ img {
 .con {
 	display: flex;
 }
-.media{
+
+.media {
 	flex: 1;
 	display: flex;
 	justify-content: center;
@@ -185,14 +191,22 @@ a {
 }
 
 .hometext {
-    color: #000; /* Keeps your original color */
-    font-size: 18px; /* Adjusts to a readable size */
-    font-family: 'Poppins', sans-serif; /* Uses a clean, modern font */
-    line-height: 1.6; /* Improves readability */
-    font-weight: 400; /* Ensures a balanced text weight */
-    text-align: justify; /* Aligns text for a structured look */
-    max-width: 800px; /* Prevents overly wide text blocks */
-    margin: 0 auto; /* Centers the text block */
+	color: #000;
+	/* Keeps your original color */
+	font-size: 18px;
+	/* Adjusts to a readable size */
+	font-family: 'Poppins', sans-serif;
+	/* Uses a clean, modern font */
+	line-height: 1.6;
+	/* Improves readability */
+	font-weight: 400;
+	/* Ensures a balanced text weight */
+	text-align: justify;
+	/* Aligns text for a structured look */
+	max-width: 800px;
+	/* Prevents overly wide text blocks */
+	margin: 0 auto;
+	/* Centers the text block */
 }
 
 
@@ -227,7 +241,8 @@ body {
 .navbar-nav a {
 	color: lightgray;
 }
-.nav-link{
+
+.nav-link {
 	flex: 1;
 	display: flex;
 	width: 80px;
@@ -274,6 +289,7 @@ img {
 	height: 120%;
 	border-radius: 7px;
 }
+
 .btn {
 	background-color: #6b6a69;
 	color: white;
@@ -282,7 +298,8 @@ img {
 	border-color: #768998;
 	box-shadow: 0 0 10px #768998;
 }
-.btn:hover  {
+
+.btn:hover {
 	background-color: gray;
 	color: black;
 	border: 2px solid black;
@@ -332,6 +349,8 @@ img {
 }
 
 input[type="text"],
+input[type="number"],
+input[type="email"],
 select,
 textarea {
 	width: 100%;
